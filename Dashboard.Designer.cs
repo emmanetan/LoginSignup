@@ -30,14 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.Panel = new Siticone.UI.WinForms.SiticonePanel();
+            this.siticoneLabel1 = new Siticone.UI.WinForms.SiticoneLabel();
             this.ToggleSwitch1 = new Siticone.UI.WinForms.SiticoneToggleSwitch();
             this.Theme = new Siticone.UI.WinForms.SiticoneLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.siticoneControlBox1 = new Siticone.UI.WinForms.SiticoneControlBox();
-            this.siticoneControlBox2 = new Siticone.UI.WinForms.SiticoneControlBox();
-            this.siticoneControlBox3 = new Siticone.UI.WinForms.SiticoneControlBox();
-            this.siticoneLabel1 = new Siticone.UI.WinForms.SiticoneLabel();
             this.siticoneButton1 = new Siticone.UI.WinForms.SiticoneButton();
             this.Panel.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -46,9 +43,6 @@
             // Panel
             // 
             this.Panel.Controls.Add(this.siticoneLabel1);
-            this.Panel.Controls.Add(this.siticoneControlBox3);
-            this.Panel.Controls.Add(this.siticoneControlBox2);
-            this.Panel.Controls.Add(this.siticoneControlBox1);
             this.Panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel.Location = new System.Drawing.Point(0, 0);
             this.Panel.Name = "Panel";
@@ -56,6 +50,17 @@
             this.Panel.Size = new System.Drawing.Size(1408, 28);
             this.Panel.TabIndex = 4;
             this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
+            // 
+            // siticoneLabel1
+            // 
+            this.siticoneLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.siticoneLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneLabel1.Font = new System.Drawing.Font("Comfortaa", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneLabel1.Location = new System.Drawing.Point(31, 4);
+            this.siticoneLabel1.Name = "siticoneLabel1";
+            this.siticoneLabel1.Size = new System.Drawing.Size(109, 21);
+            this.siticoneLabel1.TabIndex = 7;
+            this.siticoneLabel1.Text = "Inventory System";
             // 
             // ToggleSwitch1
             // 
@@ -101,55 +106,6 @@
             this.panel1.Size = new System.Drawing.Size(266, 749);
             this.panel1.TabIndex = 7;
             // 
-            // siticoneControlBox1
-            // 
-            this.siticoneControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticoneControlBox1.FillColor = System.Drawing.Color.White;
-            this.siticoneControlBox1.HoveredState.Parent = this.siticoneControlBox1;
-            this.siticoneControlBox1.IconColor = System.Drawing.Color.Black;
-            this.siticoneControlBox1.Location = new System.Drawing.Point(1362, -1);
-            this.siticoneControlBox1.Name = "siticoneControlBox1";
-            this.siticoneControlBox1.ShadowDecoration.Parent = this.siticoneControlBox1;
-            this.siticoneControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.siticoneControlBox1.TabIndex = 8;
-            // 
-            // siticoneControlBox2
-            // 
-            this.siticoneControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticoneControlBox2.ControlBoxType = Siticone.UI.WinForms.Enums.ControlBoxType.MaximizeBox;
-            this.siticoneControlBox2.FillColor = System.Drawing.Color.White;
-            this.siticoneControlBox2.HoveredState.Parent = this.siticoneControlBox2;
-            this.siticoneControlBox2.IconColor = System.Drawing.Color.Black;
-            this.siticoneControlBox2.Location = new System.Drawing.Point(1317, -1);
-            this.siticoneControlBox2.Name = "siticoneControlBox2";
-            this.siticoneControlBox2.ShadowDecoration.Parent = this.siticoneControlBox2;
-            this.siticoneControlBox2.Size = new System.Drawing.Size(45, 29);
-            this.siticoneControlBox2.TabIndex = 9;
-            // 
-            // siticoneControlBox3
-            // 
-            this.siticoneControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticoneControlBox3.ControlBoxType = Siticone.UI.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.siticoneControlBox3.FillColor = System.Drawing.Color.White;
-            this.siticoneControlBox3.HoveredState.Parent = this.siticoneControlBox3;
-            this.siticoneControlBox3.IconColor = System.Drawing.Color.Black;
-            this.siticoneControlBox3.Location = new System.Drawing.Point(1272, -1);
-            this.siticoneControlBox3.Name = "siticoneControlBox3";
-            this.siticoneControlBox3.ShadowDecoration.Parent = this.siticoneControlBox3;
-            this.siticoneControlBox3.Size = new System.Drawing.Size(45, 29);
-            this.siticoneControlBox3.TabIndex = 10;
-            // 
-            // siticoneLabel1
-            // 
-            this.siticoneLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.siticoneLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneLabel1.Font = new System.Drawing.Font("Comfortaa", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneLabel1.Location = new System.Drawing.Point(31, 4);
-            this.siticoneLabel1.Name = "siticoneLabel1";
-            this.siticoneLabel1.Size = new System.Drawing.Size(109, 21);
-            this.siticoneLabel1.TabIndex = 7;
-            this.siticoneLabel1.Text = "Inventory System";
-            // 
             // siticoneButton1
             // 
             this.siticoneButton1.CheckedState.Parent = this.siticoneButton1;
@@ -173,7 +129,6 @@
             this.ClientSize = new System.Drawing.Size(1408, 777);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Panel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
@@ -196,9 +151,6 @@
         private Siticone.UI.WinForms.SiticoneLabel Theme;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel1;
-        private Siticone.UI.WinForms.SiticoneControlBox siticoneControlBox3;
-        private Siticone.UI.WinForms.SiticoneControlBox siticoneControlBox2;
-        private Siticone.UI.WinForms.SiticoneControlBox siticoneControlBox1;
         private Siticone.UI.WinForms.SiticoneLabel siticoneLabel1;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton1;
     }

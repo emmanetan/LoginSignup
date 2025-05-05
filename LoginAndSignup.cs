@@ -23,6 +23,7 @@ namespace LoginSignup
             getIni();
             PlaceholderLoader();
 
+
             pw = Panel.Width;
             hided = false;
         }
@@ -170,7 +171,6 @@ namespace LoginSignup
             path.CloseFigure();
 
             Region = new Region(path);
-
 
             this.Opacity = 01;
             timer1.Interval = 10;
